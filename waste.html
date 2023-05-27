@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="pollution.html">Pollution & Nuclear Energy</a></li>
+			<li><a class="active" href="#wste">Waste Management</a></li>
+			<li><a href="renewableEnergies.html">Renewable Energies</a></li>
+			<li><a href="greenAreas.html">Green Areas</a></li>
+		</ul>
+		<div id="home">
+			<img id="logo" src="Images/logo.png">
+			<img id="logo2" src="Images/logo2.png">
+			<h1>Climate Change and Warming in Europe</h1>
+			<img id="earth" src="Images/earth.png">
+			<h2>Climate Analysts: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+			<h3 id="introductionTitle">Waste Management</h3>
+			<div id="p">
+				<p>Poor waste management contributes to climate change and air pollution and
+				directly affects many ecosystems and species. Waste management is broken down 
+				into six types of treatment: landfilling, incineration with energy recovery, 
+				incineration without energy recovery, recycling, backfilling and other disposals.
+				Waste treatments are evaluated according to the following waste hierarchy:</p>
+			</div>
+			<img id="wasteHierarchy" src="Images/wasteHierarchy.png">
+			<div id="p">
+				<p>A landfill (disposal category) is a site to collect and store waste that is 
+				going to be transported and treated. Landfills release methane, the very powerful 
+				greenhouse gas linked to climate change. Methane is formed by microorganisms 
+				present in landfills from biodegradable waste, such as food, paper and garden 
+				waste. Depending on the way they are built, landfills might also contaminate soil
+				and water, so it's important to reduce them as much as possible. Incineration is 
+				the process of combustion that converts waste into ash, flue gas and heat. 
+				It releases gases that contribute to air pollution and the greenhouse effect. 
+				Through this process, is possible to produce electric energy (recovery 
+				category). When the production of electric energy from incineration is not possible,
+				it's classified in the disposal category. Recycling (corresponding category) is 
+				the process of conversion of waste into new materials and objects. This practice 
+				reduces the consumption of fresh raw materials, energy use, greenhouse gas 
+				emissions, air pollution (from incineration) and water pollution (from 
+				landfilling). Backfilling (reuse category) is the process to transform waste into
+				new products without pre-treatments. Backfilling and recycling are reinforced by 
+				waste sorting. Here's a percentage stacked bar chart to consult how some 
+				European countries manage their waste. Move the cursor on the bars to see 
+				details. Click on the button to choose the year you're interested in. 
+				Mineral waste isn't included.</p>
+			</div>	
+			<select style="margin-left:465px" id="selectButton">
+				<option value="2010">2010</option>
+				<option value="2012">2012</option>
+				<option value="2014">2014</option>
+				<option value="2018">2018</option>
+				<option value="2020">2020</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="percentageStackedBarChart"></div>
+			<script src="Charts/Waste/percentage_stacked_bar_chart.js"></script>
+			<div id="p">
+				<p>From the above bar chart, it's possible to observe that from 2010 to 2020, most
+				of European countries increased recycled waste, especially Italy, Netherlands, 
+				Croatia, Belgium and Slovenia. Belgium is the European country with the best waste
+				management: more than 85% of its waste is recycled in 2020. 
+				In other countries, recycling isn't still the main treatment, especially in 
+				Finland, Malta and Poland.</br>
+				Here's a scatterplot to show economic losses, expressed in millions of euro, of 
+				some European countries concerning their waste, expressed in tons (t), that isn't
+				recycled or backfilled. Through the button, choose the year you're interested in. 
+				Move the cursor on the dots to see details.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton2">
+				<option value="2018">2018</option>
+				<option value="2020">2020</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="scatterplot"></div>
+			<script src="Charts/Waste/scatterplot.js"></script>
+			<div id="p">
+				<p>From the above chart, it's possible to observe in general that the more the 
+				waste isn't recycled or backfilled, the more the economic losses increase. This 
+				fact explains the importance of the circular economy. A circular economy is an 
+				eco-friendly model of production and consumption which can regenerate on its own
+				forever. It involves techniques such as reusing, repairing, refurbishing and 
+				recycling existing materials and products. Here's a clarifying schema:</p>
+			</div>
+			<img id="circularEconomy" src="Images/circularEconomy.png">
+		</div>
+	</body>	
+</html>
