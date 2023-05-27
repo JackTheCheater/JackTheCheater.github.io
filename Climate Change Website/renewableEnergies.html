@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="pollution.html">Pollution & Nuclear Energy</a></li>
+			<li><a href="waste.html">Waste Management</a></li>
+			<li><a class="active" href="#renewableEnergies">Renewable Energies</a></li>
+			<li><a href="greenAreas.html">Green Areas</a></li>
+		</ul>
+		<div id="home">
+			<img id="logo" src="Images/logo.png">
+			<img id="logo2" src="Images/logo2.png">
+			<h1>Climate Change and Warming in Europe</h1>
+			<img id="earth" src="Images/earth.png">
+			<h2>Climate Analysts: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+			<h3 id="introductionTitle">Renewable Energies</h3>
+			<div id="p">
+				<p>Renewable energy is energy derived from natural resources that are
+				replenished at a higher rate than they are consumed and it creates far lower
+				greenhouse emissions than fossil fuels, coal, oil and gas. 
+				Renewable energy creates three times more job than fossil fuels. Renewable energy 
+				often provides energy for electricity generation to a grid, air and water 
+				heating/cooling, and stand-alone power systems. Renewable energy technology 
+				projects are typically large-scale, but they are also suited to rural and remote 
+				areas and developing countries, where energy is often crucial in human 
+				development. Here's a schema about the main renewable energy technologies
+				employed:</p>
+			</div>
+			<img id="renewableEnergies" src="Images/renewableEnergies.png">
+			<div id="p">
+				<p>Transitioning from fossil fuels to renewable energy is the key to addressing 
+				the climate crisis. How is the situation in Europe? Here's a line chart showing 
+				the evolution of the mean share of renewable energy in Europe (34 countries 
+				considered). Move the cursor on the dots to see details.</p>
+			</div>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="lineChart"></div>
+			<script src="Charts/RenewableEnergies/line_chart.js"></script>
+			<div id="p">
+				<p>From the above chart, it's possible to observe that in Europe, the mean share
+				of renewable energy increased by 13% from 2004 to 2021.<br> Here's a line chart 
+				showing the evolution of the mean investment in Europe (22 countries considered)
+				to contrast climate change considering the countries which signed the United 
+				Nations Framework Convention on Climate Change (UNFCCC): an international 
+				environmental treaty to reduce greenhouse gas concentration in the atmosphere. 
+				Move the cursor on the dots to see details.</p>
+			</div>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="lineChart2"></div>
+			<script src="Charts/RenewableEnergies/line_chart2.js"></script>
+			<div id="p">
+				<p>In Europe, the mean investment to UNFCCC increased a lot from 2014 to 2019, 
+				then it remained stable.<br> Here's a bar chart showing the shares of 
+				renewable energy in the most important European countries. Move the cursor on the
+				bars to see details. Click on the button to choose the year you're interested in.
+				</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton">
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>					
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="barChart"></div>
+			<script src="Charts/RenewableEnergies/bar_chart.js"></script>
+			<div id="p">
+				<p>From the above chart, it's possible to observe that the most important European
+				countries increased their shares of renewable energy. Scandinavian countries are 
+				the ones which achieved the best results.<br> Here's a bar chart showing the 
+				investments of the most important European countries to UNFCCC. Move the
+				cursor on the bars to see details. Click on the button to choose the year you're 
+				interested in.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton2">
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="barChart2"></div>
+			<script src="Charts/RenewableEnergies/bar_chart2.js"></script>
+			<div id="p">
+				<p>From 2014 to 2021, Germany and France are the two countries which invested 
+				more to UNFCCC, while the others are much less.<br> Here's a choropleth map 
+				showing the shares of renewable energy of all European countries. Move the cursor
+				on the countries to see details. Click on the button to choose the year you're
+				interested in.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton3">
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>					
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+			<div id="choroplethMap"></div>
+			<script src="Charts/RenewableEnergies/choropleth_map.js"></script>
+			<div id="p">
+				<p>From 2004 to 2021, not all countries increased significantly the shares
+				of renewable energy. In particular, it's possible to observe that countries such 
+				as Germany, Italy, France, Belgium and Netherlands, which are leading countries, 
+				increased the shares of renewable energy less than other nations such as Romania
+				and Moldova, whose GDP is much lower than theirs.<br>
+				Here's a choropleth map to show investments of all European countries to UNFCCC. 
+				Move the cursor on the countries to see details. Click on the button to choose
+				the year you're interested in.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton4">
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+			<div id="choroplethMap2"></div>
+			<script src="Charts/RenewableEnergies/choropleth_map2.js"></script>
+			<div id="p">
+				<p>Considering the fact that data about many nations are unknown, only leading 
+				countries increased the investments to UNFCCC.
+				</p>
+			</div>
+		</div>
+	</body>	
+</html>

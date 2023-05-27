@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="pollution.html">Pollution & Nuclear Energy</a></li>
+			<li><a href="waste.html">Waste Management</a></li>
+			<li><a href="renewableEnergies.html">Renewable Energies</a></li>
+			<li><a class="active" href="#greenAreas">Green Areas</a></li>
+		</ul>
+		<div id="home">
+			<img id="logo" src="Images/logo.png">
+			<img id="logo2" src="Images/logo2.png">
+			<h1>Climate Change and Warming in Europe</h1>
+			<img id="earth" src="Images/earth.png">
+			<h2>Climate Analysts: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+			<h3 id="introductionTitle">Green Areas</h3>
+			<div id="p">
+				<p>The trees of the forests take up carbon dioxide from the atmosphere and
+				release oxygen during photosynthesis. They also carry out the opposite process, 
+				also known as respiration, but when forests are growing, photosynthesis
+				exceeds respiration, and the surplus carbon is stored in tree trunks, roots
+				and soil. This is called "sequestration". When forests are cut down, much
+				of that stored carbon is released into the atmosphere again as carbon dioxide.
+				 This is how deforestation and forest degradation contribute to global warming.
+				Here's a choropleth map showing the amount of forests in European countries 
+				expressed in hectares (ha). Move the cursor on the countries to see details. 
+				Choose the year using the bottom.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton">
+				<option value="1990">1990</option>
+				<option value="2000">2000</option>
+				<option value="2010">2010</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+			<div id="choroplethMap"></div>
+			<script src="Charts/GreenAreas/choropleth_map.js"></script>
+			<div id="p">
+				<p>Sweden, Spain and Finland are the countries with the highest amount of forests.
+				 In general, all European countries increased the amount of forests, but France
+				is the country which registered the most important increase in wooded areas from 
+				1990 to 2020.</br>
+				Utilised agricultural areas (UAA) can be classified into three types: low 
+				intensity, medium intensity and high intensity. A UAA is classified under 
+				the class "low intensity" if the amount of money spent for inputs is lower than
+				88 euros/hectare. A UAA is classified under the class "medium intensity" if the
+				amount of money spent for inputs is between 88 euros/hectares and 560 
+				euros/hectare.  A UAA is classified under the class "high intensity" if the
+				amount of money spent for inputs is greater than 560 euros/hectare.
+				The inputs are fertilisers, soil improvers, pesticides and other means of 
+				protection such as traps and baits, bird scarers, anti-hail shells, frost 
+				protection and purchased feed. These kinds of inputs are toxic and they damage the 
+				soil, the plants and the animals, so it's necessary to use them as little as 
+				possible. Here's a choropleth map about the amount of areas 
+				dedicated to the agriculture of European countries, expressed in hectares (ha). 
+				Move the cursor on the countries to see details. Choose the year and the type of 
+				intensity using the bottoms.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton2">
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+			</select>
+			<select style="margin-left:30px" id="selectButton3">
+				<option value="low">Low</option>
+				<option value="medium">Medium</option>
+				<option value="high">High</option>
+			</select>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+			<div id="choroplethMap2"></div>
+			<script src="Charts/GreenAreas/choropleth_map2.js"></script>
+			<div id="p">
+				<p>From the choropleth map above, it's possible to observe that from 2010 to 2019,
+				 many European countries increased the amount of high-intensity UAA, instead of
+				 reducing them. </br>
+				Here's a scatterplot to represent the distribution of the most important 
+				European countries considering their amount of wooded areas (Y-axis) concerning
+				their total UAA (X-axis), both expressed in hectares (ha). Move the cursors on the 
+				dots to see details. Choose the year using the bottom.</p>
+			</div>
+			<select style="margin-left:465px" id="selectButton4">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+			</select>
+			<div id="scatterplot2"></div>
+			<script src="Charts/GreenAreas/scatterplot.js"></script>
+			<div id="p">
+				<p>Sweden and Finland are the countries whose amount of forests is much higher
+				than the amount of UAA. France, Germany, Belgium, Netherlands, Denmark, Ireland 
+				and especially UK, instead, are the countries whose amount of wooded areas is 
+				quite low concerning UAA.</br>
+				How to maintain a high amount of wooded areas and UAA at the same time? The
+				solution is agroforestry: a land use management system in which trees or shrubs
+				are grown among crops or pastureland. Here's a picture of this technique.</p>
+			</div>
+			<img id="agroForestry" src="Images/agroforests.png">
+		</div>
+	</body>	
+</html>

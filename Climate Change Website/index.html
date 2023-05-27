@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="pollution.html">Pollution & Nuclear Energy</a></li>
+			<li><a href="waste.html">Waste Management</a></li>
+			<li><a href="renewableEnergies.html">Renewable Energies</a></li>
+			<li><a href="greenAreas.html">Green Areas</a></li>
+		</ul>
+		<div id="home">
+			<img id="logo" src="Images/logo.png">
+			<img id="logo2" src="Images/logo2.png">
+			<h1>Climate Change and Warming in Europe</h1>
+			<img id="earth" src="Images/earth.png">
+			<h2>Climate Analysts: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+			<h3 id="introductionTitle">Global Warming</h3>
+			<div id="p">
+				<p>Global warming is the ongoing increase in global average temperature that
+				causes long-term changes to Earth's climate from which it derives the term 
+				"Climate Change". This current rise in global average temperature is primarily 
+				caused by fossil fuel use, deforestation and some agricultural, industrial and 
+				waste management practices that increase the greenhouse effect. What's the 
+				greenhouse effect? Here's an animated explanation:</p>
+			</div>
+			<img id="greenhouseEffect" src="Images/greenhouseEffect.gif">
+			<div id="p">
+				<p>The greenhouse effect is a process that occurs when energy from a planet's
+				host star goes through the planet's atmosphere and heats the planet's surface, but
+				greenhouse gases in the atmosphere prevent most of the heat from returning 
+				directly to space, so they make the planet livable with an appropriate temperature
+				for life. The greenhouse gases which play the most significant role are 
+				carbon dioxide and methane. Increasing the amount of greenhouse gases in the 
+				atmosphere means increasing the greenhouse effect which traps more heat in
+				Earth's lower atmosphere, causing global warming. According to the data provided 
+				by GISTEMP (NASA Goddard's Global Surface Temperature Analysis), it's possible to
+				observe from the following line chart, how the mean European surface temperature 
+				(upper line) and the mean global surface temperature (lower line) variated 
+				concerning their corresponding means of the period between 1850 and 1899. 
+				Move the cursor on the dots to see the values in detail.</p>
+			</div>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="lineChartTemperature"></div>
+			<script src="Charts/Home/line_chart.js"></script>
+			<div id="p">
+				<p>This not-negligible increase in the average global temperature is responsible
+				for the following changes:</p>
+			</div>
+			<img id="impact" src="Images/impact.png">
+			<div id="p">
+				<p><br>Ice melting is probably the main indicator of global warming. Here's a video
+				about ice melting in Antarctica:</p>
+			</div>
+			<video controls autoplay muted loop>
+				<source src="Images/antarctica.mp4" type="video/mp4">
+				<source src="Images/antarctica.ogg" type="video/ogg">
+			</video>
+			<div id="p">
+				<p>According to NSF International, Antarctica contains almost 90% of Earth's 
+				total ice volume and 70% of its fresh water. The melting of the Arctic and 
+				Antarctic ice influences oceanic currents because huge amounts of cold water 
+				coming from Antarctica move to hotter oceans slowing down their sea currents and 
+				this disrupts the delicate biological balance of the sea ecosystems. The ice melting 
+				causes the sea-level rise: if the Arctic should melt completely, the sea level 
+				would rise by six meters according to the experts, and a not-negligible amount of
+				land would extinguish. The ice melting leads also to changes in the hydrological 
+				cycle, causing frequent periods of droughts.</p>
+			</div>
+		</div>
+	</body>	
+</html>
